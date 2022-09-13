@@ -1,0 +1,259 @@
+div.mt-5 {
+        width:90%;
+        margin: 5%;
+        border:1px ridge rgb(184, 117, 39);
+        box-sizing: border-box; 
+        padding: 1cm; 
+        margin-block: 2cm; 
+        background-color: rgb(0, 0, 0, 0.7);
+        text-align: center; 
+        color: rgb(255, 255, 255); 
+        font-size: large;
+        min-height: 90%;
+}
+
+div.grid-container {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+     grid-gap: 1em;
+   }
+
+div.grid-container1 {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+grid-gap: 1em;
+}
+   
+img {
+     width: 65%;
+     height: auto;
+   }
+   
+   .listing {
+     position: relative;
+   }
+    
+   .title {
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     background: rgba(255,255,255,0.2);
+      
+     color: #7e7e7e;
+     font-size: 1.5em;
+     font-weight: bold;
+     text-decoration: none;
+      
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   
+     opacity: 0;
+     transition: opacity 0.5s;
+   }
+   
+   .listing:hover .title {
+     opacity: 1;
+   }
+
+@media (hover: none) { 
+     .title {
+     opacity: 1;
+     background: none;
+     position: absolute;
+     }
+  }
+
+
+body {
+     background-image: url("../Immagini/loghi/elden-ring.jpg"); 
+     background-size: 90%; 
+     background-attachment: scroll;
+     background-repeat: no-repeat;
+     background-position: 50% 0%;
+     }
+
+.popup{
+     display: inline;
+     position: fixed;
+     z-index: 1;
+     padding-top: 30%;
+     width: 100%; 
+     height: 100%;
+     overflow: auto;
+     left: 0;
+     top: 0;
+     text-align: center;
+     display: none;
+     color: white;
+}
+   
+.popupcontent{
+     background-color: #000000;
+     margin: auto;
+     padding: 20px;
+     border:2px ridge rgb(184, 117, 39);
+     width: 50%;
+     border-radius: 10px;
+}
+
+.classeInput{
+     border:2px ridge rgb(184, 117, 39);
+     border-radius: 5px;
+}
+
+@media screen and (min-width:781px) {
+       div.d-lg-inline-block {
+            float: right;
+       }
+       div.d-inline-block {
+            width: 50%;
+       }
+
+       div.card1 {
+          float: right;
+          width:50%;
+       }
+       
+       div.card2 {
+          width:50%;
+       }
+
+       .popup{
+            padding-top: 15%;
+       }
+
+       textarea{
+            width: 25vw;
+       }
+
+     #contenitoreMenuLaterale{
+          display: none;
+     }
+}
+
+@media screen and (max-width:780px) {
+     div.d-lg-inline-block {
+          margin: auto;
+     }
+     div.d-inline-block {
+          width: 100%;
+     }
+
+     div.card1 {
+          width:100%;
+     }
+  
+     div.card2 {
+          width:100%;
+     }
+     
+     body{
+          background-position: 50% 50%;
+          background-size: 200%;
+     }
+
+     textarea{
+          width: 80vw;
+     }
+
+     #contenitoreMenuLineare{
+          display: none;
+     }
+
+     #immagineCentraleHomepage{
+          display: none;
+     }
+
+     div.mt-5{
+          background-color: rgb(0, 0, 0, 0.5);
+     }
+
+     .logo{
+          display: none;
+     }
+}
+
+
+.menuLaterale {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     right: 0;
+     background-color: #111; 
+     overflow-x: hidden;
+     padding-top: 60px; 
+     transition: 0.5s; 
+     text-align: left;
+     max-width: max-content;
+   }
+   
+.menuLaterale a {
+     padding: 8px 8px 8px 32px;
+     text-decoration: none;
+     font-size: 25px;
+     color: white;
+     display: block;
+     transition: 0.3s;
+     white-space: nowrap;
+}
+
+.menuLaterale a:hover {
+color: rgb(184, 117, 39);
+}
+
+.menuLaterale .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+.divsinistro{
+     display: flex;
+     justify-content: space-around; 
+     width: 35%;
+     background: rgb(197, 158, 92);;
+     border-bottom-right-radius: 10px;
+}
+
+.divdestro{
+     display: flex;
+     justify-content: space-around;
+     width: 20%;
+     background: rgb(197, 158, 92);
+     border-bottom-left-radius: 10px;
+}
+
+.menuLineare{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.menuLineare a{
+     text-decoration: none;
+     font-size: 1.2rem; 
+     font-weight:500;
+     color: black;
+}
+
+#menuProfilo a{
+     padding: 8px 8px 8px 32px;
+     text-decoration: none;
+     font-size: 1.3rem;
+     color: white;
+     display: block;
+     transition: 0.3s;
+     white-space: nowrap;
+}
+
+#menuProfilo a:hover{
+     color: rgb(184, 117, 39);
+}

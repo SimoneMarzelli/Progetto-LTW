@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Confessore</title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/style.css"/>
+
+    <script>
+        $(function(){
+            $("#bar").load("/bar/bar.html")
+        })
+    </script>
+</head>
+<body class="bg-black text-center">
+    <div id="bar"></div>
+    <picture class="logo">
+        <img src="../Immagini/loghi/elden-ring-wiki-game1.png" style="width: 30%; margin-top: 2%;">
+    </picture>
+    <div class="d-table mt-5">
+        <h1 class="text-center">Confessore</h1>
+        <div class="d-lg-inline-block" style="border: 4px double #c59e5c; padding: 1%; width: max-content;">
+           <img src="/Immagini/classi/Confessore.png" style="block-size: 10%;">
+           <table class="table-bordered" style="border: 2px; margin: auto;">
+            <TR>
+                <TD colspan="2" style="padding: 7px;">Anima liv</TD>
+                <TD colspan="2" style="padding: 7px;">10</TD>
+            </TR>
+            <TR>
+                <TD style="padding: 7px;">Vigore</TD>
+                <TD style="padding: 7px;">10</TD>
+                <TD style="padding: 7px;">Destrezza</TD>
+                <TD style="padding: 7px;">12</TD>
+            </TR>
+            <TR>
+                <TD style="padding: 7px;">Mente</TD>
+                <TD style="padding: 7px;">13</TD>
+                <TD style="padding: 7px;">Intelligenza</TD>
+                <TD style="padding: 7px;">9</TD>
+            </TR>
+            <TR>
+                <TD style="padding: 7px;">Resistenza</TD>
+                <TD style="padding: 7px;">10</TD>
+                <TD style="padding: 7px;">Fede</TD>
+                <TD style="padding: 7px;">14</TD>
+            </TR>
+            <TR>
+                <TD style="padding: 7px;">Forza</TD>
+                <TD style="padding: 7px;">12</TD>
+                <TD style="padding: 7px;">Arcano</TD>
+                <TD style="padding: 7px;">9</TD>
+            </TR>
+        </table>
+        </div>
+        <div class="d-inline-block">
+          <br>
+          <p class="text-start">Spia ecclesiastica addetta a operazioni segrete. <br>
+              Ugualmente abile con la spada e magie.
+          </p>
+          <p class="text-start"><strong>EQUIPAGGIAMENTO INIZIALE DEL CONFESSORE</strong></p>
+          <p class="text-start">Armi:</p>
+          <ul class="text-start" style="color: rgb(184, 117, 34);">
+             <li><a href="/q?tipo=armi&nome=Cura%20Urgente">Cura Urgente</a></li>
+             <li><a href="/q?tipo=armi&nome=L%27approccio%20dell%27assassino">L'approccio dell'assassino</a></li>
+             <li><a href="/q?tipo=armi&nome=Spada%20larga">Spada Larga</a></li>
+             <li><a href="/q?tipo=armi&nome=Sigillo">Sigillo</a></li>
+             <li><a href="/q?tipo=armi&nome=Scudo">Scudo</a></li>
+            </ul>
+          <p class="text-start">Armatura:</p>
+          <ul class="text-start" style="color: rgb(184, 117, 34);">
+              <li><a href="">Cappuccio da bandito</a></li>
+              <li><a href="">Abito da bandito</a></li>
+              <li><a href="">Banditi Manchettes</a></li>
+              <li><a href="">Stivali da bandito</a></li>
+          </ul>
+        </div>
+    </div>
+</body>
+</html>

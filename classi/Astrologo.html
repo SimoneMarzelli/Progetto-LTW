@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Astrologo</title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/style.css"/>
+
+    <script>
+        $(function(){
+            $("#bar").load("/bar/bar.html")
+        })
+    </script>
+</head>
+<body class="bg-black text-center">
+    <div id="bar"></div>
+    <picture class="logo">
+        <img src="../Immagini/loghi/elden-ring-wiki-game1.png" style="width: 30%; margin-top: 2%;">
+    </picture>
+    <div class="d-table mt-5">
+        <h1 class="text-center">Astrologo</h1>
+        <div class="d-lg-inline-block" style="border: 4px double #c59e5c; padding: 1%; width: max-content;">
+            <img src="/Immagini/classi/Astrologo.png" style="block-size: 10%;">
+            <table class="table-bordered" style="border: 2px; margin: auto;">
+            <TR>
+                <TD colspan="2" style="padding: 7px;">Anima liv</TD>
+                <TD colspan="2" style="padding: 7px;">6</TD>
+            </TR>
+            <TR>
+                <TD style="padding: 7px;">Vigore</TD>
+                <TD style="padding: 7px;">9</TD>
+                <TD style="padding: 7px;">Destrezza</TD>
+                <TD style="padding: 7px;">12</TD>
+            </TR>
+            <TR>
+                <TD style="padding: 7px;">Mente</TD>
+                <TD style="padding: 7px;">15</TD>
+                <TD style="padding: 7px;">Intelligenza</TD>
+                <TD style="padding: 7px;">16</TD>
+            </TR>
+            <TR>
+                <TD style="padding: 7px;">Resistenza</TD>
+                <TD style="padding: 7px;">9</TD>
+                <TD style="padding: 7px;">Fede</TD>
+                <TD style="padding: 7px;">7</TD>
+            </TR>
+            <TR>
+                <TD style="padding: 7px;">Forza</TD>
+                <TD style="padding: 7px;">8</TD>
+                <TD style="padding: 7px;">Arcano</TD>
+                <TD style="padding: 7px;">9</TD>
+            </TR>
+        </table>
+        </div>
+        <div class="d-inline-block">
+          <br>
+          <p class="text-start">Uno studioso che legge le stelle. <br>
+              Erede della Scuola di Magia Glintstone
+          </p>
+          <p class="text-start"><strong>EQUIPAGGIAMENTO INIZIALE DELL'ASTROLOGO</strong></p>
+          <p class="text-start">Armi:</p>
+          <ul class="text-start" style="color: rgb(184, 117, 34);">
+             <li><a href="/q?tipo=armi&nome=Ghiaia%20Luccicante">Ghiaia Luccicante</a></li>
+             <li><a href="/q?tipo=armi&nome=Arco%20di%20pietra%20luccicante">Arco di pietra luccicante</a></li>
+             <li><a href="/q?tipo=armi&nome=Spada%20Corta">Spada Corta</a></li>
+             <li><a href="/q?tipo=armi&nome=Bastone%20dell%27Astrologo">Bastone da Astrologo</a></li>
+          </ul>
+          <p class="text-start">Armatura:</p>
+          <ul class="text-start" style="color: rgb(184, 117, 34);">
+              <li><a href="">Cappuccio da Astrologo</a></li>
+              <li><a href="">Veste da Astrologo</a></li>
+              <li><a href="">Guanti da Astrologo</a></li>
+              <li><a href="">Pantaloni da Astrologo</a></li>
+          </ul>
+        </div>
+    </div>
+</body>
+</html>

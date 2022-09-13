@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <!--menu pricipale del sito che verrà caricato in ogni pagina-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/bar/bar.js"></script>
+</head>
+    <div id="contenitoreMenuLaterale" class="contenitoreMenuLaterale">
+        <div id="menuLaterale" class="menuLaterale">
+            <a href="javascript:void(0)" class="closebtn" id="chiudiMenuLaterale">&times;</a>
+            <a href="/">Home</a>
+            <a href="/classi/presentazione_classi.html">Classi</a>
+            <a href="/armi">Armi</a>
+            <a href="/consumabili">Consumabili</a>
+       </div>
+        <div id="dummy"></div>
+        <img src="/Immagini/loghi/elden-ring-wiki-game1.png" style="height: 70px;width: auto;margin-top: 5%;">
+        <img id="apriMenuLaterale" src="/Immagini/loghi/menu1.png" style="height: 70px;width: auto;padding: 10px;float: right;"></img>
+    </div>
+    <div id="contenitoreMenuLineare" class="contenitoreMenuLineare">
+        <div id="menuLineare" class="menuLineare">
+            <div class="divsinistro">
+                <a href="/">Home</a>
+                <a href="/classi/presentazione_classi.html">Classi</a>
+                <a href="/armi">Armi</a>
+                <a href="/consumabili">Consumabili</a>
+            </div>
+            <div id="divdestro" class="divdestro">
+                <div id="menuProfilo" class="menuLaterale">
+                    <a href="javascript:void(0)" class="closebtn" id="chiudiMenuProfilo">&times;</a>
+                    <a id="progressi" href="/profile">Visualizza progresso</a>
+                    <a href="javascript:void(0)" id="logout">Logout</a>
+                    <a href="javascript:void(0)" id="eliminaaccount">Elimina account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popupcontent" id="popupcontent">
+            Vuoi eliminare il tuo account?
+            <br>
+            <br>
+            <button id="conferma" class="btn btn-dark" style="color: red;">Conferma</button>
+            <button id="annulla" class="btn btn-dark">Annulla</button>
+        </div>
+    </div>
